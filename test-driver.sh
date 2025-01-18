@@ -7,7 +7,7 @@
 ## is printed to standard output and to suitably named output files.
 
 ## Written on 2024-10-30 by Moreno Marzolla
-## Last modified 2025-01-17 by Moreno Marzolla
+## Last modified 2025-01-18 by Moreno Marzolla
 
 IMG_SIZES="1024 2048 4096"
 RADIUS="16 32 64 128 256"
@@ -18,8 +18,8 @@ EXE=./median-filter
 
 # Test different image depths
 for B in $BPP ; do
-    make clean && CFLAGS=-DBPP=$B NVCFLAGS=-DBPP=$B make
-    echo 
+    make clean && CFLAGS=-DBPP=$B NVCFLAGS=-DBPP=$B make || exit -1
+    echo
     echo "algorithm"
     echo "|                     img size"
     echo "|                     |    filter radius"
