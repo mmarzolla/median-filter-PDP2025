@@ -179,8 +179,8 @@ static HistNode *hist_insert_rec(HistNode *n, HistNode *p, data_t k, int c)
             n->count += c;
         }
     }
-    /* it is not possible to call update_counts_to_root() since node
-       might be not yet connected to the tree */
+    /* we can not call `update_counts_to_root()` since node `n`
+       might not be connected to the tree yet */
     update_counts(n);
     return n;
 }
