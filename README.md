@@ -13,7 +13,7 @@ To compile the program, you need the `gcc` compiler and NVidia CUDA
 SDK. The program has been developed under Ubuntu Linux 22.04 using
 `gcc` 11.4.0 and `nvcc` V12.6.77.
 
-The included `Makefile` takes care of the compilation. The command
+The included [Makefile](Makefile) takes care of the compilation. The command
 
         make
 
@@ -39,6 +39,7 @@ the program can generate a 3D image that is stored in the output file
 as a sequence of XY matrices. The output is a sequence of (xsize *
 ysize * zsize) random words of type `data_t`.
 
-The script `test-driver.sh` produces the data used for Figure 3 in the
-paper. The script `plot.gp` reads the data and produces the actual
-figure; this script requires [gnuplot](http://gnuplot.info/).
+The script [test-driver.sh](test-driver.sh) produces the data used for
+Figure 3 in the paper. The script [plot.gp](plot.gp) reads the data
+and produces the actual figure; this script requires
+[gnuplot](http://gnuplot.info/).
