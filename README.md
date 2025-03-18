@@ -7,7 +7,7 @@ This repository contains the parallel median filter described in:
 > Turin, Italy, pp. 9--12, IEEE Computer Society Conference Publishing
 > Services (CPS) ISBN: 979-8-3315-2493-7 ISSN: 2377-5750
 
-See <CITATION.md> for the BibTeX citation block.
+See [CITATION.md](CITATION.md) for the BibTeX citation block.
 
 To compile the program, you need the `gcc` compiler and NVidia CUDA
 SDK. The program has been developed under Ubuntu Linux 22.04 using
